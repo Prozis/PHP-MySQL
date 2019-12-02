@@ -1,17 +1,49 @@
+* {box-sizing: border-box;}
 body{
-  padding: 30px;
-  font-size: 20px;
-  background-color: #e6faff;
+  font-size: 18px;
+  /* background-color: #e6faff; */
+}
+.container{
+  margin: 0 100px;
+  padding: 20px 50px;
+  text-align: center;
+  background-color: #D6EDF3;
+}
+table{
+  margin: auto;
 }
 table td{
   padding: 10px 20px;
 }
 #title{
-  background-color: #1ad1ff;
+  line-height: 0.6em;
+  background-color: #01607A;
+  color: white;
 
 }
 .base_add{
   margin-top: 30px;
   background-color: white;
   padding: 20px 30px;
+}
+form{
+  font-size: 18px;
+  line-height: 1.5em;
+width: 350px;
+margin: auto;
+margin-bottom: 20px;
+text-align: right;
+padding: 15px 50px 15px 15px;
+border-radius: 7px;
+
+}
+
+input{
+  height: 30px;
+  margin: 5px 5px;
+}
+button{
+  height: 30px;
+  background-color: #9DA8AA;
+  font-size: 15px;
 }
