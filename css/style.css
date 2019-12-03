@@ -7,6 +7,23 @@ body{
   margin: 0;
   /* background-color: #e6faff; */
 }
+nav{
+  padding: 30px 50px;
+}
+nav a{
+  color: black;
+  display: inline-block;
+  text-decoration: none;
+  border:1px solid gray;
+  border-radius: 10px;
+  padding: 15px 30px;
+  font-weight: 700;
+  margin-right: 20px;
+
+}
+nav a:hover{
+  background-color: #7FB0DF;
+}
 .container{
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -27,20 +44,17 @@ table td{
 
 
 }
-.users_add{
+.default_form{
   margin-top: 30px;
   background-color: white;
-padding: 15px 100px 15px 15px;
-}
-form{
+  padding: 15px 100px 15px 15px;
   font-size: 18px;
   line-height: 1.5em;
-width: 450px;
-margin: auto;
-margin-bottom: 20px;
-text-align: right;
-
-border-radius: 7px;
+  width: 450px;
+  margin: auto;
+  margin-bottom: 20px;
+  text-align: center;
+  border-radius: 7px;
 
 }
 
@@ -48,10 +62,13 @@ input{
   height: 30px;
   margin: 5px 5px;
 }
-button{
+.default_form button{
   margin-top: 20px;
-padding: 10px 20px;
+  padding: 10px 20px;
   background-color: #F9F9F9;
   border-radius: 15px;
   font-size: 15px;
+}
+.users_main_list button{
+
 }
