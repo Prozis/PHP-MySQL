@@ -7,16 +7,21 @@
   </head>
   <body>
     <?php
-    require_once 'header.php'; ?>
+    require_once '../header.php'; ?>
     <div class="container">
       <div class="users_form">
         <h3>Добавление сообщения в таблицу 'mesage':</h3>
 
         <form class="default_form" action="" method="post">
-            <label for="title">Заголовок</label><br>
-            <input type="text" name="title" ><br>
+            <div class="form_inner">
+              <input type="text" name="title" >
+              <label for="title">Заголовок</label>
+            </div>
+
+  <div class="form_inner">
             <label for="body">Введите текст сообщения</label>
-            <textarea name="body" rows="8" cols="50"></textarea>
+            <textarea name="body" ></textarea>
+              </div>
               <button type="submit" name="button_add">Отправить</button>
           </form>
 
@@ -26,13 +31,7 @@
         require_once 'functions.php';
         /* Подключение к серверу MySQL */
         $link = connect();
-          $query_find = "SELECT * FROM users WHERE name = '$name'";
-          if ($result = mysqli_query($link, $query_find)) {
-            while( $row = mysqli_fetch_assoc($result) ){
-            }
-            mysqli_free_result($result);
 
-        }
           mysqli_close($link);
        ?>
 

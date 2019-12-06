@@ -7,7 +7,7 @@
   </head>
   <body>
     <?php
-    require_once 'header.php'; ?>
+    require_once '../header.php'; ?>
     <div class="container">
     <div class="users_list">
       <?php
@@ -35,7 +35,14 @@
        ?>
 </div>
 <div class="users_form">
-  
+  <form class="default_form" action="/core/find.php" method="post">
+    <h3>Поиск пользователя:</h3>
+<div class="form_inner">
+      <label for="name">Имя</label>
+      <input type="text" name="name" ><br>
+</div>
+    <button type="submit" name="button_find">Поиск пользователя</button>
+  </form>
 </div>
 
 

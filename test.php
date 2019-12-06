@@ -9,7 +9,7 @@
 
     <?php
 require_once 'header.php';
-    require_once 'functions.php';
+    require_once '/core/functions.php';
     /* Подключение к серверу MySQL */
     $link = connect();
     /* Посылаем запрос серверу */
