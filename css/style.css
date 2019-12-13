@@ -44,7 +44,7 @@ table td{
   padding: 10px 20px;
 }
 #title{
-  line-height: 0.6em;
+  line-height:2.5em;
   background-color: #7FB0DF;
 
 
@@ -91,4 +91,10 @@ margin: 15px 0px;
   position: absolute;
   left: 5px;
   top: -8px;
+}
+.add_mesage{
+  display: block;
+  padding-top: 15px;
+  color: #B86850;
+  font-size: 18px;
 }

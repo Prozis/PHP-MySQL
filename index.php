@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+
 <html lang="ru" dir="ltr">
 <head>
   <meta charset="utf-8">
@@ -20,7 +21,7 @@
 
       /* Выборка результатов запроса */
 
-      echo '<table border="1"> <tr id="title"><td>id</td><td>Имя</td><td>Возраст</td><td>E-mail</td><td></td></tr>';
+      echo '<table border="1"> <tr id="title"><th>id</th><th>Имя</th><th>Возраст</th><th>E-mail</th><th></th></tr>';
       while( $row = mysqli_fetch_assoc($result) ){
         echo "<tr><td>".$row['id']."</td><td>".$row['name']."</td><td>".$row['age']."</td><td>".$row['email']."</td>
         <td>
@@ -36,11 +37,8 @@
       mysqli_free_result($result);
     }
     ?>
-
   </div>
   <div class="users_form">
-
-
     <form class="default_form" action="core/add.php" method="post">
       <h3>Добавление пользователя:</h3>
 <div class="form_inner">
@@ -55,10 +53,13 @@
         <input type="text" name="email" >
           </div>
       <button type="submit" name="button_add">Добавить пользователя</button>
+      <?php
+      //проверяем создалась ли кука в обработчике формы и выводим сообщение
+      if(isset($_COOKIE["d22"])){
+        echo "<span class='add_mesage'>Пользователь добавлен</span>";
+      }
+      ?>
       </form>
-
-
-
     <form class="default_form" action="/core/find.php" method="post">
       <h3>Поиск пользователя:</h3>
 <div class="form_inner">
@@ -68,9 +69,6 @@
       <button type="submit" name="button_find">Поиск пользователя</button>
     </form>
   <?php
-
-      //если нажата кнопка удалить
-
       /* Закрываем соединение */
       mysqli_close($link);
       ?>
