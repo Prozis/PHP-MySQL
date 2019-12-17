@@ -11,4 +11,11 @@ mysqli_set_charset($link, "utf8");
 return $link;
 };
 
+//определяет количество записей в таблице
+function count_rows($con){
+  $sql = "SELECT * FROM users";
+   $result = mysqli_query($con, $sql);
+   $result = mysqli_num_rows($result);
+   return $result;
+}
  ?>

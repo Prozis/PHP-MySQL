@@ -27,9 +27,10 @@ nav a:hover{
   background-color: #7FB0DF;
 }
 .container{
+  max-width: 1600px;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  margin: 0 100px;
+  margin: 0 auto;
   padding: 20px 50px;
   text-align: center;
   background-color: #EAEAEA;
@@ -46,30 +47,35 @@ table td{
 #title{
   line-height:2.5em;
   background-color: #7FB0DF;
-
-
+}
+.page_numbers{
+padding-top: 20px;
+font-weight: bold;
+}
+.page_numbers a{
+  text-decoration: none;
+  font-size: 20px;
+  margin-right: 10px;
+}
+.users_form{
+  padding: 0 20px;
 }
 .default_form{
-  margin-top: 30px;
+  margin: 30px auto;
   background-color: white;
   padding: 20px 40px;
   font-size: 18px;
   line-height: 1.5em;
-  width: 450px;
-  margin: auto;
-  margin-bottom: 20px;
+ max-width: 500px;
   text-align: center;
   border-radius: 7px;
-
 }
-
 .default_form input{
   line-height: 40px;
   width: 100%;
   margin: 20px 0px;
   font-size: 20px;
   padding: 5px;
-
 }
 .default_form textarea{
   width: 100%;

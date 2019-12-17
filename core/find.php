@@ -19,8 +19,10 @@
           $query_find = "SELECT * FROM users WHERE name = '$name'";
           if ($result = mysqli_query($link, $query_find)) {
 
-            /* ВЫводим результаты  поиска таблицей */
-            echo '<h3>Результаты поиска:</h3>';
+            // количество записей
+            $find_num = mysqli_num_rows($result);
+            echo "<h3>Найдено $find_num записи(сей):</h3>";
+              /* ВЫводим результаты  поиска таблицей */
             echo '<table border="1"> <tr id="title"><td>id</td><td>Имя</td><td>Возраст</td><td>E-mail</td></tr>';
             while( $row = mysqli_fetch_assoc($result) ){
 
